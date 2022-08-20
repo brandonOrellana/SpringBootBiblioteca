@@ -1,8 +1,8 @@
 package com.example.biblioteca.repository;
 
-import com.example.biblioteca.model.Book;
-import com.example.biblioteca.model.Lend;
-import com.example.biblioteca.model.LendStatus;
+import com.example.biblioteca.model.entity.Book;
+import com.example.biblioteca.model.entity.Lend;
+import com.example.biblioteca.model.common.LendStatus;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

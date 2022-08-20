@@ -1,4 +1,4 @@
-package com.example.biblioteca.model;
+package com.example.biblioteca.model.entity;
 
 
 import com.fasterxml.jackson.annotation.JsonBackReference;

@@ -1,10 +1,15 @@
 package com.example.biblioteca.service;
 
-import com.example.biblioteca.model.*;
-import com.example.biblioteca.model.request.AuthorCreationRequest;
-import com.example.biblioteca.model.request.BookCreationRequest;
-import com.example.biblioteca.model.request.BookLendRequest;
-import com.example.biblioteca.model.request.MemberCreationRequest;
+import com.example.biblioteca.model.common.LendStatus;
+import com.example.biblioteca.model.common.MemberStatus;
+import com.example.biblioteca.model.entity.Author;
+import com.example.biblioteca.model.entity.Book;
+import com.example.biblioteca.model.entity.Lend;
+import com.example.biblioteca.model.entity.Member;
+import com.example.biblioteca.request.AuthorCreationRequest;
+import com.example.biblioteca.request.BookCreationRequest;
+import com.example.biblioteca.request.BookLendRequest;
+import com.example.biblioteca.request.MemberCreationRequest;
 import com.example.biblioteca.repository.AuthorRepository;
 import com.example.biblioteca.repository.BookRepository;
 import com.example.biblioteca.repository.LendRepository;
@@ -66,6 +71,7 @@ public class LibraryService {
     public Member createMember(MemberCreationRequest request){
         Member member = new Member();
         BeanUtils.copyProperties(request,member);
+        member.setStatus(MemberStatus.ACTIVE);
         return memberRepository.save(member);
     }
 

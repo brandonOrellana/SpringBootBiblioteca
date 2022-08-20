@@ -1,12 +1,12 @@
 package com.example.biblioteca.controller;
 
-import com.example.biblioteca.model.Author;
-import com.example.biblioteca.model.Book;
-import com.example.biblioteca.model.Member;
-import com.example.biblioteca.model.request.AuthorCreationRequest;
-import com.example.biblioteca.model.request.BookCreationRequest;
-import com.example.biblioteca.model.request.BookLendRequest;
-import com.example.biblioteca.model.request.MemberCreationRequest;
+import com.example.biblioteca.model.entity.Author;
+import com.example.biblioteca.model.entity.Book;
+import com.example.biblioteca.model.entity.Member;
+import com.example.biblioteca.request.AuthorCreationRequest;
+import com.example.biblioteca.request.BookCreationRequest;
+import com.example.biblioteca.request.BookLendRequest;
+import com.example.biblioteca.request.MemberCreationRequest;
 import com.example.biblioteca.service.LibraryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

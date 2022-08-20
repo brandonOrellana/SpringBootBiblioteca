@@ -1,9 +1,9 @@
-package com.example.biblioteca.model.request;
+package com.example.biblioteca.request;
 
 import lombok.Data;
 
 @Data
-public class MemberCreationRequest {
+public class AuthorCreationRequest {
     private String firstName;
     private String lastName;
 }

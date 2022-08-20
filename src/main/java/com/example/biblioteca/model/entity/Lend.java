@@ -1,5 +1,6 @@
-package com.example.biblioteca.model;
+package com.example.biblioteca.model.entity;
 
+import com.example.biblioteca.model.common.LendStatus;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Getter;
 import lombok.Setter;
