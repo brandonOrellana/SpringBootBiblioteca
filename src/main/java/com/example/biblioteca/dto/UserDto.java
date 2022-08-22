@@ -7,4 +7,5 @@ import lombok.Data;
 public class UserDto {
     private String username;
     private UserStatus userStatus;
+    private String airlineId;
 }

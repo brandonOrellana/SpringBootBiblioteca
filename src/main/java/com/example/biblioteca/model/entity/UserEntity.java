@@ -10,11 +10,12 @@ import javax.persistence.*;
 @Setter
 @Entity
 @Table(name = "user")
-public class User {
+public class UserEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String username;
     private String password;
     private UserStatus userStatus;
+    private String airlineId;
 }

@@ -1,7 +1,6 @@
 package com.example.biblioteca.controller;
 
 import com.example.biblioteca.dto.UserDto;
-import com.example.biblioteca.model.entity.User;
 import com.example.biblioteca.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -25,6 +24,6 @@ public class UserController {
     }
     @GetMapping("/airline/{airlineId}")
     public ResponseEntity createUser(@PathVariable String airlineId){
-       // return ResponseEntity.ok(userService.readAirline(airlineId));
+        return ResponseEntity.ok(userService.readAirline(airlineId));
     }
 }
